@@ -1,0 +1,169 @@
+/* X-Files Theme */
+
+:root {
+    --xf-green: #00ff41;
+    --xf-dark-green: #00cc33;
+    --xf-black: #0a0a0a;
+    --xf-dark: #111111;
+    --xf-warning: #ffc107;
+}
+
+body.xfiles-body {
+    background-color: var(--xf-black);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)),
+                url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Moon_and_stars_at_night.jpg/1280px-Moon_and_stars_at_night.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--xf-green);
+}
+
+/* Glowing text effect */
+.glow-text {
+    text-shadow: 0 0 10px var(--xf-green), 0 0 20px var(--xf-green), 0 0 40px var(--xf-dark-green);
+}
+
+/* Card hover effect */
+.xfiles-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.xfiles-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--xf-black);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--xf-dark-green);
+    border-radius: 4px;
+}
+
+/* Form inputs */
+.form-control:focus {
+    border-color: var(--xf-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 65, 0.25);
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(100vh - 76px);
+    border-radius: 0;
+}
+.sidebar .nav-link:hover {
+    color: var(--xf-green) !important;
+}
+.sidebar .nav-link.active {
+    border-left: 3px solid var(--xf-green);
+}
+
+/* Table */
+.table-dark {
+    --bs-table-bg: #111;
+}
+
+/* Navbar */
+.navbar-dark .nav-link:hover {
+    color: var(--xf-green) !important;
+}
+
+/* Buttons */
+.btn-success {
+    --bs-btn-bg: var(--xf-dark-green);
+    --bs-btn-border-color: var(--xf-dark-green);
+}
+.btn-success:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+.btn-outline-success:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+}
+
+/* Alerts */
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.15);
+    border-color: #dc3545;
+    color: #ff6b6b;
+}
+
+/* Badge glow */
+.badge.bg-danger {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Language switcher */
+.btn-outline-light.active {
+    background-color: var(--xf-green);
+    border-color: var(--xf-green);
+    color: black;
+}
+
+/* Article content */
+.article-content h2, .article-content h3, .article-content h4 {
+    color: var(--xf-green);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.article-content p {
+    margin-bottom: 1em;
+}
+.article-content blockquote {
+    border-left: 3px solid var(--xf-green);
+    padding-left: 1em;
+    margin: 1em 0;
+    font-style: italic;
+    color: #aaa;
+}
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.article-content a {
+    color: var(--xf-green);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--xf-green);
+}
+
+/* Form select focus */
+.form-select:focus {
+    border-color: var(--xf-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 65, 0.25);
+}
+
+/* Alert success in admin */
+.alert-success {
+    background-color: rgba(0, 204, 51, 0.15);
+    border-color: var(--xf-dark-green);
+    color: var(--xf-green);
+}
+
+/* Pagination */
+.page-link {
+    transition: all 0.2s;
+}
+.page-link:hover {
+    background-color: var(--xf-dark-green) !important;
+    color: black !important;
+}
